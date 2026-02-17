@@ -23,6 +23,13 @@ A responsive Expense Tracker web application built with HTML, CSS, and JavaScrip
 - Filter expenses by category
 - Reset filter to show all expenses
 
+### 📱 Responsive Design
+- Mobile-friendly layout
+- Clean modern UI
+- Smooth hover effects
+
+---
+
 ## 🛠️ Technologies Used
 
 - HTML5
@@ -32,8 +39,3 @@ A responsive Expense Tracker web application built with HTML, CSS, and JavaScrip
 
 ---
 
-
-### 📱 Responsive Design
-- Mobile-friendly layout
-- Clean modern UI
-- Smooth hover effects

@@ -11,3 +11,10 @@ A responsive Expense Tracker web application built with HTML, CSS, and JavaScrip
 - Session-based access using localStorage
 - Logout functionality
 - Route protection (Dashboard access only after login)
+
+### 💰 Expense Management
+- Add new expenses
+- Select category
+- Add amount & date
+- Delete individual expenses
+- Real-time total calculation

@@ -90,15 +90,6 @@ button:active {
   transform: translateY(0);
 }
 
-/* #msg {
-  
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  background: #f1f5f9;
-  border: 1px solid #cbd5e1;
-} */
-
 .container p {
   margin-top: 12px;
   font-size: 0.92rem;

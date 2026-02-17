@@ -1,0 +1,269 @@
+/* Dashboard Global */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title Row */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.logout-btn {
+  padding: 8px 14px;
+  background: #ef4444;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Input Section Card */
+.input-section {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 6px;
+  align-items: center; /* important: vertically align label & input */
+
+}
+
+.input-section label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.input-section select,
+.input-section input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  background: #f8fafc;
+  margin-left: -90px;
+}
+
+#add-btn {
+  background: linear-gradient(90deg,#2563eb,#3b82f6);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Expenses Card */
+.expenses-list {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-top: 1%;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+
+tfoot td {
+  background: #f1f5f9;
+  font-weight: bold;
+  padding: 14px;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 6px 10px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+/* Filter Section */
+#filter-section {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center; /* important: vertically align label & input */
+}
+
+#filter-section select,
+#filter-section button {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+
+#filter-btn {
+ background-color: #2563eb;
+ background: #e5e7eb;
+  color: #1e293b;
+  border: none;
+}
+#reset-btn  {
+    border: none;
+    color: #1e293b;
+}
+
+/* Proper Header Layout */
+header {
+  background: white;
+  padding: 16px 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Dashboard Title */
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+/* Logout Button (Fixed) */
+.logout-btn {
+  padding: 10px 16px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 12px;
+  }
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* INPUT SECTION */
+  .input-section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .input-section label {
+    margin-bottom: 4px;
+  }
+
+  .input-section select,
+  .input-section input {
+    margin-left: 0;           /* 🔥 important fix */
+    width: 100%;
+  }
+
+  #add-btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  /* EXPENSES CARD */
+  .expenses-list {
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;   /* horizontal scroll on small screens */
+  }
+
+  th, td {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+
+  #filter-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  #filter-section select,
+  #filter-section button {
+    width: 100%;
+  }
+
+  /* DELETE BUTTON */
+  .delete-btn {
+    width: 100%;
+    padding: 8px;
+  }
+}

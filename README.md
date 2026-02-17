@@ -18,3 +18,7 @@ A responsive Expense Tracker web application built with HTML, CSS, and JavaScrip
 - Add amount & date
 - Delete individual expenses
 - Real-time total calculation
+
+### 🔍 Filtering
+- Filter expenses by category
+- Reset filter to show all expenses

@@ -21,7 +21,7 @@ A responsive Expense Tracker web application built with HTML, CSS, and JavaScrip
 
 ### 🔍 Filtering
 - Filter expenses by category
-
+- Reset filter to show all expenses
 
 ### 📱 Responsive Design
 - Mobile-friendly layout
